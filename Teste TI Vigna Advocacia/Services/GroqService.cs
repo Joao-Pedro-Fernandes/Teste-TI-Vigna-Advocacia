@@ -8,8 +8,8 @@ namespace Teste_TI_Vigna_Advocacia.Services
     {
         private readonly HttpClient _httpClient;
         private const string UrlGroq = "https://api.groq.com/openai/v1/chat/completions";
-        private const string GroqApiKey = "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";
-
+        //private const string GroqApiKey = "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";
+        private const string GroqApiKey = "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";
         public GroqService(HttpClient httpClient)
         {
             _httpClient = httpClient;
@@ -42,7 +42,7 @@ namespace Teste_TI_Vigna_Advocacia.Services
 
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception($"Erro na API Groq {response.StatusCode}");
+                throw new Exception($"Erro na API Groq: {response.StatusCode}");
             }
 
             var responseContent = await response.Content.ReadAsStringAsync();
