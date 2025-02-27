@@ -67,7 +67,7 @@ namespace Teste_TI_Vigna_Advocacia.Services
                     throw new Exception("Erro ao reconhecer o json");
 
                 using var jsonDocument = JsonDocument.Parse(jsonContent);
-                jsonDocument.RootElement.Clone();
+                var clone = jsonDocument.RootElement.Clone();
 
                 var options = new JsonSerializerOptions
                 {
@@ -75,7 +75,7 @@ namespace Teste_TI_Vigna_Advocacia.Services
                     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
                 };
 
-                return JsonSerializer.Serialize(jsonDocument, options);
+                return JsonSerializer.Serialize(clone, options);
             }
             catch (Exception ex)
             {
