@@ -14,7 +14,7 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
 - Após o projeto ser executado, é só acessar o end point por meio da url "http://localhost:5150/GetDataPdf" 
 - Usando o postman você conseguirá fazer a requisição enviando um arquivo pdf contendo um processo jurídico
 - A chave do arquivo deve se chamar "file"
-
+- Ou utilize o swagger na url "http://localhost:5150/swagger/index.html"
 - Se quiser um método de explicação diferente, na pasta clonada do projeto, tem um arquivo pdf chamado "Utilização da API". 
 Neste arquivo você encontrará um exemplo ilustrado de como utilizar a API. 
 
