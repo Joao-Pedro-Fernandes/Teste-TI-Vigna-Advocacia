@@ -1,14 +1,22 @@
 ## Pré-requisitos
 Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
 
-- [.NET SDK](https://dotnet.microsoft.com/download) (versão 8.0.24 ou superior)
+- [.NET SDK](https://dotnet.microsoft.com/download) (versão 8.0.0 ou superior)
 - [Visual Studio](https://visualstudio.microsoft.com/) ou outra IDE de sua escolha
 
 ## Clone o repositório:
 - git clone https://github.com/Joao-Pedro-Fernandes/Teste-TI-Vigna-Advocacia.git
 
 ## Para rodar a API
-- Na pasta clonada do projeto, tem um arquivo pdf chamado "Utilização da API". Neste arquivo você encontrará um exemplo de como utilizar a API. 
+- Entre na pasta "Teste TI Vigna Advocacia"
+- Abra um terminal nessa pasta
+- Digite o comando "dotnet run" no terminal e execute
+- Após o projeto ser executado, é só acessar o end point por meio da url "http://localhost:5150/GetDataPdf" 
+- Usando o postman você conseguirá fazer a requisição enviando um arquivo pdf contendo um processo jurídico
+- A chave do arquivo deve se chamar "file"
+
+- Se quiser um método de explicação diferente, na pasta clonada do projeto, tem um arquivo pdf chamado "Utilização da API". 
+Neste arquivo você encontrará um exemplo ilustrado de como utilizar a API. 
 
 ## Como é chamada à API LLM
 - Com o texto extraído pelo código do end point "GetDataPdf", acontece uma chamada a uma service de nome "GroqService.cs" 
