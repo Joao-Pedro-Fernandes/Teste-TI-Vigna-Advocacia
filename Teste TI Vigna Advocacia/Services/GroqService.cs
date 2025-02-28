@@ -27,7 +27,7 @@ namespace Teste_TI_Vigna_Advocacia.Services
                     " Você deve fazer a extração do número do processo e das partes envolvidas." +
                     " Quero que na sua resposta seja em formato de json, da seguinte forma (exemplo):" +
                     " { numero_processo: NUMERO_DO_PROCESSO_AQUI, partes: [João da Silva (réu), Banco XYZ (Autor), José (Advogado)]}." +
-                    " Sua resposta deve se limitar somente a este json." +
+                    " Sua resposta deve se limitar somente a este json. Não utilize ``` na resposta, mas pode usar as aspas do Json normalmente" +
                     $" quero que extraia do seguinte texto: {text}" }
                 }
             };
